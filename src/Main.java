@@ -11,7 +11,6 @@ public class Main {
         }
 
         double[] x = new double[14];
-        final Random random = new Random();
         for (int i = 0; i < 14; i++) {
             x[i] = (double) (Math.random() * (15)) - 2;
         }
@@ -27,7 +26,7 @@ public class Main {
                 else {
                     nums[i][j] = Math.pow(Math.E, Math.asin(Math.cos(x[j])));
                 }
-                System.out.print(String.format("%.4f ", nums[i][j]));
+                System.out.printf("%.4f ", nums[i][j]);
             }
             System.out.println();
         }
